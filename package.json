@@ -1,0 +1,21 @@
+{
+  "name": "really-useful-js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dunkman32/really-useful-js"
+  },
+  "keywords": [
+    "npm",
+    "realyUsefulJS",
+    "JS",
+    "usefull"
+  ],
+  "author": "nozza",
+  "license": "ISC"
+}
