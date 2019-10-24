@@ -7,7 +7,8 @@
 ## in nodeJS!
 ```
     const {
-        tryCatch
+        tryCatch,
+        AppError,
     } = require("really-useful-js");
 
 router.get('/',
@@ -16,5 +17,8 @@ router.get('/',
     ...
     return res.send(arrayOfObjects);
   }));
+
+  <!-- in your code you can throw --> 
+  throw new AppError(message, statusCode);
 
 ```
