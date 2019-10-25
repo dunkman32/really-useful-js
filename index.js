@@ -1,3 +1,4 @@
+//try Catch
 const tryCatch = callback => async (req, res, next) => {
     try {
         const promise = callback(req, res, next);
@@ -7,6 +8,7 @@ const tryCatch = callback => async (req, res, next) => {
         next(e);
     }
 };
+//Error
 class AppError extends Error {
     constructor(message, status) {
       super(message);
@@ -17,7 +19,14 @@ class AppError extends Error {
     }
   };
 
+// Array
+const addElementAtIntex = (array, index, element) => array.splice(index, 0, element);
+
+const removeElementFromArray = (array, element) => array.filter(value => value !== element)
+
 module.exports = {
     tryCatch,
     AppError,
+    addElementAtIntex,
+    removeElementFromArray,
 }
