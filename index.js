@@ -24,9 +24,12 @@ const addElementAtIntex = (array, index, element) => array.splice(index, 0, elem
 
 const removeElementFromArray = (array, element) => array.filter(value => value !== element)
 
+const randomString = length => [...Array(length)].map(i=>(~~(Math.random()*36)).toString(36)).join('')
+
 module.exports = {
     tryCatch,
     AppError,
     addElementAtIntex,
     removeElementFromArray,
+    randomString,
 }
