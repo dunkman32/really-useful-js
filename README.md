@@ -1,11 +1,11 @@
 
 # install
-  ```
+  ```sh
   $ npm i --save really-useful-js
   ```
 
 ## in nodeJS!
-```
+```sh
     const {
         tryCatch,
         AppError,
@@ -37,3 +37,8 @@
   <!-- RANDOM STRING GENERATOR -->
   randomString(10)  <!-- "jkn9mosxoe" -->
 ```
+
+License
+----
+
+ISC
