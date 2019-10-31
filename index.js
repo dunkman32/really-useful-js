@@ -26,10 +26,13 @@ const removeElementFromArray = (array, element) => array.filter(value => value !
 
 const randomString = length => [...Array(length)].map(i=>(~~(Math.random()*36)).toString(36)).join('')
 
+const multiClass = (...args) => args.join(' ')
+
 module.exports = {
     tryCatch,
     AppError,
     addElementAtIntex,
     removeElementFromArray,
     randomString,
+    multiClass,
 }

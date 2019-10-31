@@ -12,6 +12,7 @@
         addElementAtIntex,
         removeElementFromArray,
         randomString,
+        multiClass,
     } = require("really-useful-js");
 
   <!-- clean code without try{...}catch(e){next(e)} -->
@@ -33,6 +34,10 @@
   <!-- REMOVE -->
    const newArr = removeElementFromArray(arr, "Leonard")
    console.log(newArr);  <!-- ["noZZa", "Sheldon", "Penny", "Howard"] -->
+
+  <!-- mylti class for react without [...].join(' ') -->
+  console.log(multiClass("noZZa", "Sheldon", "Penny", "Howard"))
+  # returns: noZZa Sheldon Penny Howard
 
   <!-- RANDOM STRING GENERATOR -->
   randomString(10)  <!-- "jkn9mosxoe" -->
