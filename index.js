@@ -28,6 +28,25 @@ const randomString = length => [...Array(length)].map(i=>(~~(Math.random()*36)).
 
 const multiClass = (...args) => args.join(' ')
 
+const hexToRgb = hex => {
+    const result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex.trim());
+    return result ? {
+        r: parseInt(result[1], 16),
+        g: parseInt(result[2], 16),
+        b: parseInt(result[3], 16)
+    } : null;
+}
+
+const getTextColor = color => {
+    const rgb = hexToRgb(color);
+    if (rgb) {
+        const o = Math.round(((parseInt(rgb.r) * 299) +
+            (parseInt(rgb.g) * 587) +
+            (parseInt(rgb.b) * 114)) / 1000);
+        return (o > 125) ? "black" : "white";
+    }
+};
+
 module.exports = {
     tryCatch,
     AppError,
@@ -35,4 +54,5 @@ module.exports = {
     removeElementFromArray,
     randomString,
     multiClass,
+    getTextColor,
 }

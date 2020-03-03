@@ -13,6 +13,7 @@
         removeElementFromArray,
         randomString,
         multiClass,
+        getTexctColor
     } = require("really-useful-js");
 
   <!-- clean code without try{...}catch(e){next(e)} -->
@@ -41,6 +42,10 @@
 
   <!-- RANDOM STRING GENERATOR -->
   randomString(10)  <!-- "jkn9mosxoe" -->
+
+
+  <!-- RETURN LABEL COLOR -->
+  getTexctColor('#000000')  <!-- "white" -->
 ```
 
 License
