@@ -1,3 +1,5 @@
+import latToGeo from "./latToGeo";
+
 //try Catch
 const tryCatch = callback => async (req, res, next) => {
     try {
@@ -47,6 +49,7 @@ const getTextColor = color => {
     }
 };
 
+
 module.exports = {
     tryCatch,
     AppError,
@@ -55,4 +58,5 @@ module.exports = {
     randomString,
     multiClass,
     getTextColor,
+    latToGeo,
 }
