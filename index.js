@@ -55,7 +55,7 @@ const testEmail = email => {
 }
 
 
-module.exports = {
+export {
     tryCatch,
     AppError,
     addElementAtIntex,
