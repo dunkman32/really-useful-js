@@ -46,6 +46,9 @@
 
   <!-- RETURN LABEL COLOR -->
   getTexctColor('#000000')  <!-- "white" -->
+  
+  <!-- RETURNS BOOLEAN -->
+  testEmail('nozza@gmail.com')  <!-- "true" -->
 ```
 
 License

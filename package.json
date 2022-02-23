@@ -1,6 +1,6 @@
 {
   "name": "really-useful-js",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "```sh\r   $ npm i --save really-useful-js\r   ```",
   "main": "index.js",
   "scripts": {
